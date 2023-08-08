@@ -25,5 +25,5 @@ internal sealed class ServiceLifetimeReporter
     private static void LogService<T>(T service, string message)
         where T : IReportServiceLifetime =>
         Console.WriteLine(
-            $"    {typeof(T).Name}: {service.Id} ({message})");
+            $"    {typeof(T).Name}: SNum={service.SerialNum} Id={service.Id} ({message})");
 }
