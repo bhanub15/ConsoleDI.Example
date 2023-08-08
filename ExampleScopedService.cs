@@ -4,8 +4,7 @@ internal sealed class ExampleScopedService : IExampleScopedService
 {
     static int counter = 0;
     private int _serialNum;
-
-    int IReportServiceLifetime.SerialNum
+    public int SerialNum
     {
         get => _serialNum;
     }

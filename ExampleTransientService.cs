@@ -4,8 +4,7 @@ internal sealed class ExampleTransientService : IExampleTransientService
 {
     static int counter = 0;
     private int _serialNum;
-
-    int IReportServiceLifetime.SerialNum
+    public int SerialNum
     {
         get => _serialNum;
     }
